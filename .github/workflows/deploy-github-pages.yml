@@ -69,7 +69,7 @@ jobs:
           # intro of landing page
           TXT_ERROR_HEADER: 'Data Unavailable'
           TXT_ERROR_MESSAGE: 'Reach out to us at: '
-          TXT_ERROR_CONTACT_URL: '{{ github.server_url }}/{{ github.repository }}'
+          TXT_ERROR_CONTACT_URL: '${{ github.server_url }}/${{ github.repository }}'
           TXT_ERROR_RETRY: 'Try again?'
           REGIONS: >-
             example
