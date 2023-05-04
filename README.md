@@ -6,6 +6,16 @@ Public URL: `<insert-instance-URL>`
 
 ---
 
+## temporary setup fixes
+git submodule add --name helpful-information https://github.com/rodekruis/helpful-information.git 
+git add *
+git commit -m "add submodule"
+git push
+
+enable github pages in settings: Settings > Pages > Build and deployment Source: Github Actions
+no restrictions for Google Sheets API
+
+
 ## Status
 
 ### `helpful-information` package
