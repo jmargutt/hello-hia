@@ -54,24 +54,29 @@ jobs:
         env:
           # See: https://github.com/rodekruis/helpful-information/blob/main/.env.example
           NG_PRODUCTION: 'true'
-          ENV_NAME: '' # only for development / staging, creates a warning border to the main page
+          ENV_NAME: ''
+          # only for development / staging, creates a warning border to the main page
           NG_USE_SERVICE_WORKER: 'true'
           NG_USE_Q_AND_AS: 'true'
           NG_USE_Q_AND_A_SEARCH: 'true'
-          TXT_APP_NAME: 'Hello Hia' # title of landing page
-          TXT_APP_LOGO_URL: '' # [OPTIONAL] logo in the main page
-          TXT_MAIN_PAGE_HEADER: '' # header of landing page
-          TXT_MAIN_PAGE_INTRO: '' # intro of landing page
+          TXT_APP_NAME: 'Hello Hia'
+          # title of landing page
+          TXT_APP_LOGO_URL: ''
+          # [OPTIONAL] logo in the main page
+          TXT_MAIN_PAGE_HEADER: ''
+          # header of landing page
+          TXT_MAIN_PAGE_INTRO: ''
+          # intro of landing page
           TXT_ERROR_HEADER: 'Data Unavailable'
           TXT_ERROR_MESSAGE: 'Reach out to us at: '
           TXT_ERROR_CONTACT_URL: '{{ github.server_url }}/{{ github.repository }}'
           TXT_ERROR_RETRY: 'Try again?'
           REGIONS: >-
-            example # each region corresponds to one spreadsheet, this is the url slug
+            example
           REGIONS_LABELS: >-
-            Example # this is a readable version of each region
+            Example
           REGIONS_SHEET_IDS: >-
-            1tgqFTx0mKQOQstq2wVZKeSrJ8QKmkDw2Jpin_Sd76Vs # these are the ids of each spreadsheet of each region
+            1tgqFTx0mKQOQstq2wVZKeSrJ8QKmkDw2Jpin_Sd76Vs
           GOOGLE_SHEETS_API_KEY: ${{ secrets.GOOGLE_SHEETS_API_KEY }}
           GOOGLE_SHEETS_API_URL: 'https://sheets.googleapis.com/v4/spreadsheets'
 
@@ -86,7 +91,7 @@ jobs:
 
       - name: Add robots.txt
         working-directory: 'helpful-information'
-        run: 'cp src/robots.private.txt www/robots.txt' # put to public to make it appear on Google
+        run: 'cp src/robots.private.txt www/robots.txt'
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v2
