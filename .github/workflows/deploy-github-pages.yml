@@ -59,7 +59,7 @@ jobs:
           NG_USE_SERVICE_WORKER: 'true'
           NG_USE_Q_AND_AS: 'true'
           NG_USE_Q_AND_A_SEARCH: 'true'
-          TXT_APP_NAME: 'URCS Cash and Voucher Assistance'
+          TXT_APP_NAME: 'Cash and Voucher Assistance'
           # title of landing page
           TXT_APP_LOGO_URL: 'https://redcross.org.ua/wp-content/uploads/2021/05/red-cross-logo-300x300-1.png'
           # [OPTIONAL] logo in the main page
